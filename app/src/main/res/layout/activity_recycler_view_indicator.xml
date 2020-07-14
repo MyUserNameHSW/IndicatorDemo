@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".RecyclerViewIndicatorDemoActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/horizontal_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.hsw.indictordemo.indicator.RecyclerViewIndicator
+        android:id="@+id/horizontal_indicator"
+        android:layout_width="200dp"
+        android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vertical_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <com.hsw.indictordemo.indicator.RecyclerViewIndicator
+            android:id="@+id/vertical_indicator"
+            android:layout_width="5dp"
+            android:layout_height="200dp"/>
+    </LinearLayout>
+</LinearLayout>
