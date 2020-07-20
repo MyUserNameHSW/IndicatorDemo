@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".RecyclerViewIndicatorDemoActivity"
-            android:label="recyclerView指示器"/>
-        <activity android:name=".ViewPageIndicatorDemoActivity"
-            android:label="ViewPage指示器"/>
+        <activity android:name=".RipperIndicatorDemoActivity"
+            android:label="波纹指示器"></activity>
+        <activity
+            android:name=".RecyclerViewIndicatorDemoActivity"
+            android:label="recyclerView指示器" />
+        <activity
+            android:name=".ViewPageIndicatorDemoActivity"
+            android:label="ViewPage指示器" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

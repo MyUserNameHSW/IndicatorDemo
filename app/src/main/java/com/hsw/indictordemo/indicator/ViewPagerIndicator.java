@@ -2,6 +2,7 @@ package com.hsw.indictordemo.indicator;
 
 import android.content.Context;
 
+import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -39,6 +40,11 @@ public class ViewPagerIndicator extends FrameLayout {
     }
 
     int indViewWidth = 0;
+
+    @Override
+    public void draw(Canvas canvas) {
+        super.draw(canvas);
+    }
 
     public void setWithViewPager(ViewPager viewPager) {
         //如果没有adapter，则隐藏不显示

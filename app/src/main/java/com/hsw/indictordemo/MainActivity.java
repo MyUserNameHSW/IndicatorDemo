@@ -25,5 +25,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RecyclerViewIndicatorDemoActivity.class));
             }
         });
+
+        findViewById(R.id.ripper_view_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RipperIndicatorDemoActivity.class));
+            }
+        });
     }
 }
